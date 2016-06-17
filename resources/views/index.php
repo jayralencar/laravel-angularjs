@@ -43,9 +43,9 @@
 					</thead>
 					<tbody>
 						<tr ng-repeat="pessoa in pessoas | filter: pesquisar">
-							<td>@{{pessoa.id}}</td>
-							<td>@{{pessoa.nome}}</td>
-							<td>@{{pessoa.email}}</td>
+							<td>{{pessoa.id}}</td>
+							<td>{{pessoa.nome}}</td>
+							<td>{{pessoa.email}}</td>
 							<td>
 								<button class="btn btn-info btn-xs" ng-click="editar(pessoa)">Editar</button>
 								<button class="btn btn-danger btn-xs" ng-click="excluir(pessoa)">Excluir</button>

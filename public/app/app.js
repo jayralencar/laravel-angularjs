@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 var app = angular.module('cdg',[]);
 
 // Service
@@ -26,7 +26,7 @@ app.controller('pessoaController', function($scope, pessoaService) {
 	$scope.listar = function(){
 		pessoaService.lista().success(function(data){
 			$scope.pessoas = data;
-		})
+		});
 	}
 
 	$scope.editar = function(data){
@@ -52,7 +52,7 @@ app.controller('pessoaController', function($scope, pessoaService) {
 		if(confirm("Tem certeza que deseja excluir?")){
 			pessoaService.exclui(data.id).success(function(res){
 				$scope.listar();
-			})
+			});
 		}
 	}
 });
